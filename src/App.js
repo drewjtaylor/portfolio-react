@@ -3,6 +3,8 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 
+import './App.css';
+
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -11,9 +13,9 @@ function App() {
     <>
         <PortfolioNavbar />
         <Routes>
-            <Route path='/' element={HomePage}/>
-            <Route path='projects' element={ProjectsPage}/>
-            <Route path='contact' element={ContactPage}/>
+            <Route path='/' element={<HomePage />}/>
+            <Route path='projects' element={<ProjectsPage />}/>
+            <Route path='contact' element={<ContactPage />}/>
         </Routes>
     </>
   );
