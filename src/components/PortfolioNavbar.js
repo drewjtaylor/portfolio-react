@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import logo from '../img/initials-black.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import {Link} from 'react-router-dom'
 
@@ -23,9 +22,9 @@ const PortfolioNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link><Link to='/'>Home</Link></Nav.Link>
-            <Nav.Link><Link to='projects'>My Projects</Link></Nav.Link>
-            <Nav.Link><Link to='contact'>Contact</Link></Nav.Link>
+            <Link to='/'><Nav.Link>Home</Nav.Link></Link>
+            <Link to='projects'><Nav.Link>My Projects</Nav.Link></Link>
+            <Link to='contact'><Nav.Link>Contact</Nav.Link></Link>
           </Nav>
         </Navbar.Collapse>
         </Container>
