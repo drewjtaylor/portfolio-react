@@ -22,9 +22,9 @@ const PortfolioNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to='/'><Nav.Link>Home</Nav.Link></Link>
-            <Link to='projects'><Nav.Link>My Projects</Nav.Link></Link>
-            <Link to='contact'><Nav.Link>Contact</Nav.Link></Link>
+            <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='projects'>My Projects</Nav.Link>
+            <Nav.Link href='contact'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         </Container>
