@@ -3,14 +3,16 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import projects from '../data/projects.js'
+import projects from '../data/projects.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import { useSPring, animated } from 'react-spring'; // Need to download react-spring from home
+// import { useSPring, animated } from 'react-spring'; // Need to download react-spring from home
 
 // import ProjectCard from '../components/ProjectCard';
 
 const ProjectsPage = () => {
-  const animatedProps = useSpring({ to: {opacity: 1}, from: {opacity: 0}})
+//   const animatedProps = useSpring({ to: {opacity: 1}, from: {opacity: 0}})
   
   
   return (
@@ -18,7 +20,7 @@ const ProjectsPage = () => {
         <Row>
             {projects.map(project => {
                 return <>
-                    <animated.div style={animatedProps}>
+                    {/* <animated.div style={animatedProps}> */}
                         <Row className='my-4'>
                             {/* Coloumn for title and img */}
                             <Col md={3}>
@@ -30,10 +32,13 @@ const ProjectsPage = () => {
                             <Col md={9}>
                                 <h3><em>{project.subTitle}</em></h3>
                                 <p>{project.description}</p>
-                                <Button as="a" href={project.githubUrl} target="_blank" rel='noreferrer' variant='success'>See it on Github</Button>
+                                <i class="fa-brands fa-github-square"></i>
+                                <Button as="a" href={project.githubUrl} target="_blank" rel='noreferrer' variant='success'>
+                                    See it on Github <FontAwesomeIcon icon={faGithub} />
+                                </Button>
                             </Col>
                         </Row>
-                    </animated.div>
+                    {/* </animated.div> */}
                     <hr />
                 </>
             })}
