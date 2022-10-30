@@ -7,12 +7,12 @@ import projects from '../data/projects.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-// import { useSPring, animated } from 'react-spring'; // Need to download react-spring from home
+import { useSpring, animated } from 'react-spring'; // Need to download react-spring from home
 
 // import ProjectCard from '../components/ProjectCard';
 
 const ProjectsPage = () => {
-//   const animatedProps = useSpring({ to: {opacity: 1}, from: {opacity: 0}})
+  const animatedProps = useSpring({ to: {opacity: 1}, from: {opacity: 0}})
   
   
   return (
@@ -20,13 +20,13 @@ const ProjectsPage = () => {
         <Row>
             {projects.map(project => {
                 return <>
-                    {/* <animated.div style={animatedProps}> */}
+                    <animated.div style={animatedProps}>
                         <Row className='my-4'>
                             {/* Coloumn for title and img */}
                             <Col md={3}>
                                 <h2><a href={project.liveUrl} target="_blank" rel='noreferrer'>{project.title}</a></h2>
                                 {/* <img src={project.imgSource} fluid width='100%' alt={`${project.title} screenshot`}/> */}
-                                <Image className='shadow' src={project.imgSource} fluid width='100%' alt={`${project.title} screenshot`}/>
+                                <Image className='shadow my-1' src={project.imgSource} fluid width='100%' alt={`${project.title} screenshot`}/>
                             </Col>
                             {/* column for description */}
                             <Col md={9}>
@@ -38,7 +38,7 @@ const ProjectsPage = () => {
                                 </Button>
                             </Col>
                         </Row>
-                    {/* </animated.div> */}
+                    </animated.div>
                     <hr />
                 </>
             })}
