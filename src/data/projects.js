@@ -21,7 +21,7 @@ const projects = [
         githubUrl: 'https://github.com/drewjtaylor/formed_church'
     },
     {
-        title:"Formation Church",
+        title:"Formation Church Events",
         subTitle: 'React site with state for handling an events page',
         description: '"Formation Church" (as opposed to Formed Church) was one step closer to what the church foudner visualized. Other than updating the name, the website got an update as well. In addition to a different visual style, this single-page-application introduced an events calednar. The form to enter new events validatse as users enter information, and the events list displays all future events in date order. At this stage it uses dummy data, as it has not yet been connected to any back-end.',
         imgSource: formationChurchImage,
