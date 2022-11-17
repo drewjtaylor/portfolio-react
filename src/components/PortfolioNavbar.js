@@ -3,8 +3,6 @@ import logo from '../img/initials-black.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import {Link} from 'react-router-dom'
-
 const PortfolioNavbar = () => {
   return (
     <Navbar>
@@ -23,6 +21,7 @@ const PortfolioNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='about'>About Me</Nav.Link>
             <Nav.Link href='projects'>My Projects</Nav.Link>
             <Nav.Link href='contact'>Contact</Nav.Link>
           </Nav>
