@@ -1,0 +1,21 @@
+/* Available font families from Google Fonts: 
+font-family: 'Carter One', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Dancing Script', cursive;
+*/
+
+.font-carter-one {
+    font-family: 'Carter One', cursive;
+    font-size: 1.75em;
+
+}
+
+.font-comfortaa {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.75em;
+}
+
+.font-dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
